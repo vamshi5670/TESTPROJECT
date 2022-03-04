@@ -144,7 +144,7 @@
         </div>
         <div *ngIf="(signUpForm.controls['date'].invalid && signUpForm.controls['date'].touched)" class="warn">
             <!-- <div *ngIf="signUpForm.controls['date'].errors?.required"> -->
-            Enter date
+            Invalid date
             <!-- </div>
             <div *ngIf="signUpForm.controls['date'].errors?.pattern">
                 Enter valid date
@@ -207,7 +207,7 @@
 
 
     <div class="bt1 ">
-        <button class="btn " type="submit" (click)="onSubmit()"> Submit</button>
+        <button class="btn" type="submit" (click)="onSubmit()"> Signup</button>
     </div>
 
 </form>

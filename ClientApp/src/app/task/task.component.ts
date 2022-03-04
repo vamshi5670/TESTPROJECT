@@ -26,7 +26,7 @@ export class TaskComponent implements OnInit {
   }
 
 
-  ngOnInit(): void {
+  ngOnInit() {
     this.signUp();
     
     for (this.i=1; this.i<=31; this.i++)
@@ -39,7 +39,7 @@ export class TaskComponent implements OnInit {
     //   this.year[this.j]=this.j;
     // }
     this.i=1;
-    while(this.j<2300)
+    while(this.j<=2300)
     {
       this.year[this.i++]=this.j;
       this.j++;
@@ -76,6 +76,7 @@ export class TaskComponent implements OnInit {
 
 
   onSubmit() {
+   
 
     console.log(this.signUpForm.controls.date)
     console.log(this.signUpForm.controls.month)
@@ -89,9 +90,10 @@ export class TaskComponent implements OnInit {
       //this.service.icon.next(this.icons=true);
       // this.service.tempData.push(this.signUpForm.value)
       //console.log(this.service.tempData);
-      this.router.navigate(['/login']);
+      
     }
 
+    
   }
 
   
