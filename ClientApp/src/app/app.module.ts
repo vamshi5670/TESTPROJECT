@@ -10,6 +10,9 @@ import { TaskComponent } from './task/task.component';
 import { LoginPageComponent } from './login-page/login-page.component';
 import { AdminComponent } from './admin/admin.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { SidepanelComponent } from './sidepanel/sidepanel.component';
+import { LeftpanelComponent } from './sidepanel/leftpanel/leftpanel.component';
+import { RightpanelComponent } from './sidepanel/rightpanel/rightpanel.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +20,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     NavMenuComponent,
     TaskComponent,
     LoginPageComponent,
-    AdminComponent
+    AdminComponent,
+    SidepanelComponent,
+    LeftpanelComponent,
+    RightpanelComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
@@ -26,8 +32,18 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     RouterModule.forRoot([
       { path: 'signup', component: TaskComponent },
 
-      { path: '', component: LoginPageComponent },
+      { path: 'login', component: LoginPageComponent },
       { path: 'admin', component: AdminComponent },
+      { path: '', component: RightpanelComponent },
+      
+      { path: 'sidepanel', 
+      component: SidepanelComponent,
+    children :[
+
+      { path: 'left', component: LeftpanelComponent },
+      { path: 'right', component: RightpanelComponent },
+
+    ] },
 
     ]),
     BrowserAnimationsModule
