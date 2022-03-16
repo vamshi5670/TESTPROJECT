@@ -13,6 +13,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SidepanelComponent } from './sidepanel/sidepanel.component';
 import { LeftpanelComponent } from './sidepanel/leftpanel/leftpanel.component';
 import { RightpanelComponent } from './sidepanel/rightpanel/rightpanel.component';
+import { ProfileComponent } from './sidepanel/profile/profile.component';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -23,29 +25,33 @@ import { RightpanelComponent } from './sidepanel/rightpanel/rightpanel.component
     AdminComponent,
     SidepanelComponent,
     LeftpanelComponent,
-    RightpanelComponent
+    RightpanelComponent,
+    ProfileComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
     HttpClientModule,ReactiveFormsModule,
     FormsModule,
-    RouterModule.forRoot([
-      { path: 'signup', component: TaskComponent },
+    AppRoutingModule,
+    // RouterModule.forRoot([
+    //   { path: 'signup', component: TaskComponent },
 
-      { path: 'login', component: LoginPageComponent },
-      { path: 'admin', component: AdminComponent },
-      { path: '', component: RightpanelComponent },
+    //   { path: 'login', component: LoginPageComponent },
+    //   { path: 'admin', component: AdminComponent },
+    //   { path: 'sidepanel', component: SidepanelComponent },
+
+    //   { path: 'profile', component: ProfileComponent },
       
-      { path: 'sidepanel', 
-      component: SidepanelComponent,
-    children :[
+    //   { path: 'sidepanel', 
+    //   component: SidepanelComponent,
+    // children :[
 
-      { path: 'left', component: LeftpanelComponent },
-      { path: 'right', component: RightpanelComponent },
+    //   { path: 'left', component: LeftpanelComponent },
+    //   { path: 'right', component: RightpanelComponent },
 
-    ] },
+    // ] },
 
-    ]),
+    // ]),
     BrowserAnimationsModule
   ],
   providers: [],
