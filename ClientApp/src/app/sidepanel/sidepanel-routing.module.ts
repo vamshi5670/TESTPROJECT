@@ -19,7 +19,11 @@ const routes: Routes = [
         { path:'',redirectTo:'profile',pathMatch:'full'},
         { path:'profile',component:ProfileComponent },
         { path :'aboutUs', component:AboutUsComponent },
-        { path :'dashboard', component:DashboardComponent },
+        {
+          path: 'dashboard', component: DashboardComponent,
+          loadChildren: () =>
+            import("./dashboard/dashboard.module").then((n) => n.DashboardModule),
+        },
     // ];
   ]
 

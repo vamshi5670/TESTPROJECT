@@ -1,8 +1,15 @@
 <div class="leftpanel">
     <!-- <p>working</p> -->
-    <a [routerLink]="['./profile']">Profile</a>
-    <a [routerLink]="['./dashboard']">Dashboard</a>
-    <a [routerLink]="['./aboutUs']">About US</a>
-
+    <ol>
+        <a [routerLink]="['./profile']">Profile</a> <br>
+        <a [routerLink]="['./dashboard']">Dashboard</a>
+        <ol>
+            <a [routerLink]="['./dashboard/child1']">FirstChild</a> <br>
+            <a [routerLink]="['./dashboard/child2']">SecondChild</a> <br>
+            <a [routerLink]="['./dashboard/child3']">ThirdChild</a>
+        </ol>
+        <br>
+        <a [routerLink]="['./aboutUs']">About US</a>
+    </ol>
     <!-- <a href="">SignUp</a> -->
 </div>

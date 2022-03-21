@@ -13,8 +13,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SidepanelComponent } from './sidepanel/sidepanel.component';
 import { LeftpanelComponent } from './sidepanel/leftpanel/leftpanel.component';
 import { RightpanelComponent } from './sidepanel/rightpanel/rightpanel.component';
-import { ProfileComponent } from './sidepanel/profile/profile.component';
 import { AppRoutingModule } from './app-routing.module';
+import { DashboardModule } from './sidepanel/dashboard/dashboard.module';
 
 @NgModule({
   declarations: [
@@ -26,12 +26,12 @@ import { AppRoutingModule } from './app-routing.module';
     SidepanelComponent,
     LeftpanelComponent,
     RightpanelComponent,
-    ProfileComponent
+
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
     HttpClientModule,ReactiveFormsModule,
-    FormsModule,
+    FormsModule,DashboardModule,
     AppRoutingModule,
     // RouterModule.forRoot([
     //   { path: 'signup', component: TaskComponent },

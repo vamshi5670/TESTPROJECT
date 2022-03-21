@@ -1,18 +1,18 @@
+
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
+import { AboutUsComponent } from './about-us/about-us.component';
+import { ProfileComponent } from './profile/profile.component';
 import { SidepanelRoutingModule } from './sidepanel-routing.module';
-import { Child1Component } from './dashboard/child1/child1.component';
-import { Child2Component } from './dashboard/child2/child2.component';
-import { Child3Component } from './dashboard/child3/child3.component';
 
 
 @NgModule({
   imports: [SidepanelRoutingModule],
   exports: [RouterModule],
   declarations: [
-    Child1Component,
-    Child2Component,
-    Child3Component
+    
+    ProfileComponent,
+    AboutUsComponent,
   ]
 })
 export class SidepanelModule { }
