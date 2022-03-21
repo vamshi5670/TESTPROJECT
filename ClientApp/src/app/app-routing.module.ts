@@ -12,9 +12,11 @@ const routes: Routes = [
   { path: 'login', component: LoginPageComponent },
   { path: 'signup', component: TaskComponent },
   { path: 'admin', component: AdminComponent },
-  { path: 'sidepanel', component: SidepanelComponent,
+  {
+    path: 'sidepanel', component: SidepanelComponent,
     loadChildren: () =>
-      import("./sidepanel/sidepanel.module").then((m) => m.SidepanelModule), },
+      import("./sidepanel/sidepanel.module").then((m) => m.SidepanelModule),
+  },
 ];
 
 @NgModule({
