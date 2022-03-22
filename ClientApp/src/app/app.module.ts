@@ -26,6 +26,7 @@ import { DashboardModule } from './sidepanel/dashboard/dashboard.module';
     SidepanelComponent,
     LeftpanelComponent,
     RightpanelComponent,
+   
 
   ],
   imports: [

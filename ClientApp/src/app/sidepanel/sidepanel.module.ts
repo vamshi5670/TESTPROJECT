@@ -4,6 +4,9 @@ import { RouterModule } from '@angular/router';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { ProfileComponent } from './profile/profile.component';
 import { SidepanelRoutingModule } from './sidepanel-routing.module';
+import { AdminComponent } from './profile/admin/admin.component';
+import { ManagerComponent } from './profile/manager/manager.component';
+import { UserComponent } from './profile/user/user.component';
 
 
 @NgModule({
@@ -13,6 +16,7 @@ import { SidepanelRoutingModule } from './sidepanel-routing.module';
     
     ProfileComponent,
     AboutUsComponent,
+   
   ]
 })
 export class SidepanelModule { }
