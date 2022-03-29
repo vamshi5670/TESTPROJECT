@@ -7,6 +7,7 @@ import { Component } from '@angular/core';
 })
 export class NavMenuComponent {
   isExpanded = false;
+   public navMenu=true;
 
   collapse() {
     this.isExpanded = false;
@@ -15,4 +16,16 @@ export class NavMenuComponent {
   toggle() {
     this.isExpanded = !this.isExpanded;
   }
+  menuicon(){
+    this.navMenu = !this.navMenu;
+    console.log("working" + this.navMenu)
+    
+  }
+
+  // public isExpand:boolean=false;
+  // title = 'AngLearnApp';
+
+  // public slidebarExpand(){
+  //   this.isExpand = !this.isExpand;
+  // }
 }

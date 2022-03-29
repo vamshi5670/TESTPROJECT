@@ -8,6 +8,10 @@ import { Router } from '@angular/router';
   styleUrls: ['./login-page.component.css']
 })
 export class LoginPageComponent implements OnInit {
+
+
+  // Text interpolation
+  name = 'Login page';
   
 
   constructor(private formBuilder: FormBuilder, private router: Router) { }

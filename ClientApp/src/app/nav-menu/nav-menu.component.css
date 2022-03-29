@@ -19,15 +19,35 @@ html {
     margin-bottom: 0%! important;
 }
 
-.nav {
-    width: 35px;
-    height: 5px;
-    background-color: #333;
-    margin: 6px;
-    transition: 0.4s;
+.menu {
+    position: absolute;
+    margin-left: 14px;
 }
 
-.mainnav {
-    position: absolute;
-    margin: 29px
+.leftpanel_exp {
+    margin-left: 0px;
+    border: 1px solid blue;
+    transition: 0.5s;
+}
+
+.leftpanel {
+    margin-left: -15%;
+    border: 1px solid black;
+    transition: 0.5s;
+}
+
+.bi-list {
+    margin-left: 3%;
+    width: 2%;
+    height: 3%;
+}
+
+.mainbar_exp {
+    margin-left: -15%;
+    transition: 0.5s;
+}
+
+.mainbar {
+    margin-left: 0px;
+    transition: 0.5s;
 }
