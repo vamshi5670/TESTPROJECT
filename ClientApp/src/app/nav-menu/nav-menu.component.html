@@ -1,6 +1,8 @@
 <header>
     <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-        <i class="bi bi-list" (click)="menuicon()"></i>
+        <!-- <i class="bi bi-list" (click)="menuicon()"></i> {{message}} <button (click)="newMessage()">New Message</button> -->
+
+        <i class="bi bi-list" (click)="newMessage()"></i>
 
         <div class="container">
             <a class="navbar-brand" [routerLink]="['/']"></a>
@@ -46,11 +48,11 @@
 
 
 
-    <div class="menu" [ngClass]="navMenu ? 'leftpanel_exp':'leftpanel'">
+    <div class="menu" [ngClass]="message ? 'leftpanel_exp':'leftpanel'">
         <app-leftpanel></app-leftpanel>
     </div>
 
-    <div [ngClass]="!navMenu ? 'mainbar_exp':'mainbar'">
+    <div [ngClass]="!message ? 'mainbar_exp':'mainbar'">
         <app-rightpanel></app-rightpanel>
     </div>
 

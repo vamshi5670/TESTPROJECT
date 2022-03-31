@@ -15,6 +15,7 @@ import { LeftpanelComponent } from './sidepanel/leftpanel/leftpanel.component';
 import { RightpanelComponent } from './sidepanel/rightpanel/rightpanel.component';
 import { AppRoutingModule } from './app-routing.module';
 import { DashboardModule } from './sidepanel/dashboard/dashboard.module';
+import { TooltipComponent } from './tooltip/tooltip.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { DashboardModule } from './sidepanel/dashboard/dashboard.module';
     SidepanelComponent,
     LeftpanelComponent,
     RightpanelComponent,
+    TooltipComponent,
    
 
   ],
@@ -33,7 +35,7 @@ import { DashboardModule } from './sidepanel/dashboard/dashboard.module';
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
     HttpClientModule,ReactiveFormsModule,
     FormsModule,DashboardModule,
-    AppRoutingModule,
+    AppRoutingModule, 
     // RouterModule.forRoot([
     //   { path: 'signup', component: TaskComponent },
 

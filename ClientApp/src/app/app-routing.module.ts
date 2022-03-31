@@ -4,6 +4,7 @@ import { LoginPageComponent } from './login-page/login-page.component';
 import { TaskComponent } from './task/task.component';
 import { AdminComponent } from './admin/admin.component';
 import { SidepanelComponent } from './sidepanel/sidepanel.component';
+import { TooltipComponent } from './tooltip/tooltip.component';
 
 
 
@@ -12,6 +13,7 @@ const routes: Routes = [
   { path: 'login', component: LoginPageComponent },
   { path: 'signup', component: TaskComponent },
   { path: 'admin', component: AdminComponent },
+  { path: 'tootip', component: TooltipComponent },
   {
     path: 'sidepanel', component: SidepanelComponent,
     loadChildren: () =>
